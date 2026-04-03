@@ -1,0 +1,82 @@
+"use client";
+
+import React, { useState } from "react";
+import QuestionCard from "@/components/createQuizPage/questionCard";
+import { CreateQuestion } from "@/types/index";
+import {
+  Box,
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  Stack,
+} from "@mui/material";
+
+type QuestionsPageProps = {
+  questions: CreateQuestion[];
+  addNewQuestion: () => void;
+
+  changeQuestionImageUrl: (questionUid: string, newUrl: string) => void;
+  changeQuestionImageBlob: (questionUid: string, blob: Blob) => void;
+  changeChoice: (
+    questionUid: string,
+    choiceUid: string,
+    newChoice: string,
+  ) => void;
+  changeQuestion: (uid: string, newQuestion: string) => void;
+  changeCorrectChoice: (questionUid: string, choiceUid: string) => void;
+  deleteQuestion: (uid: string) => void;
+};
+
+const QuestionsPage = ({
+  deleteQuestion,
+  addNewQuestion,
+  questions,
+  changeQuestionImageUrl,
+  changeQuestionImageBlob,
+  changeChoice,
+  changeQuestion,
+  changeCorrectChoice,
+}: QuestionsPageProps) => {
+  const [saveDialogOpen, setSaveDialogOpen] = useState<boolean>(false);
+
+  return (
+    <Stack spacing={2}>
+      {questions.map((question) => {
+        return (
+          <QuestionCard
+            deleteQuestion={() => deleteQuestion(question.uid)}
+            key={question.uid}
+            question={question}
+            changeQuestionImageUrl={(newUrl) => {
+              changeQuestionImageUrl(question.uid, newUrl);
+            }}
+            changeQuestionImageBlob={(blob) => {
+              changeQuestionImageBlob(question.uid, blob);
+            }}
+            changeChoice={(choiceUid, newChoice) => {
+              changeChoice(question.uid, choiceUid, newChoice);
+            }}
+            changeQuestion={(newQuestion) => {
+              changeQuestion(question.uid, newQuestion);
+            }}
+            changeCorrectChoice={(choiceUid) => {
+              changeCorrectChoice(question.uid, choiceUid);
+            }}
+          ></QuestionCard>
+        );
+      })}
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          gap: 2,
+        }}
+      ></Box>
+    </Stack>
+  );
+};
+
+export default QuestionsPage;

@@ -1,0 +1,43 @@
+:root {
+  --bg-dark: HSL(240, 16, 90);
+  --bg: HSL(240, 14, 96);
+  --bg-light: HSL(240, 12, 100);
+
+  --text: HSL(0, 0, 5);
+  --text-muted: HSL(0, 0, 50);
+
+  /* Highlight should generally be very light even you invert the color scheme */
+  --highlight: HSL(240, 14, 100);
+
+  --border: HSL(240, 14, 70);
+  --border-muted: HSL(240, 14, 60);
+
+  --primary: HSL(219, 59, 73);
+  --primary-hover: HSL(219, 59, 60);
+
+  --secondary: HSL(39, 59, 73);
+  --secondary-hover: HSL(39, 59, 60);
+
+  --danger: HSL(0, 63, 81);
+  --warning: HSL(36, 85, 67);
+  --success: HSL(120, 66, 62);
+  --info: HSL(246, 83, 75);
+
+  /* used for soft-sectioning, low-emphasis containers */
+  --muted-surface: rgba(0, 0, 0, 0.03);
+
+  --accent: HSL(246, 83, 75);
+}
+
+html,
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-main);
+  overscroll-behavior: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
