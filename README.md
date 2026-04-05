@@ -1,0 +1,4 @@
+<h1>Overview</h1>
+This repository contains the full-stack code for my project **Quiz App**, a web application that allows users to create, share, and play quizzes. Users can browse quizzes, create and edit their own, upload images (e.g., quiz cover images and question images), view past quiz attempts, and create a personalized profile. 
+
+The application consists of a Next.js/React frontend and a Django REST Framework (DRF) backend. The frontend provides a responsive and visually appealing interface, handling user interactions, image upload workflows, and API communication, while the backend manages data persistence, authentication, and business logic. User-uploaded images are stored in Firebase Storage, with their access URLs saved in the database, and authentication and authorization are handled through JWT tokens and protected routes to ensure secure access to features.
