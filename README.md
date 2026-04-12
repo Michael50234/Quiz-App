@@ -32,7 +32,7 @@ The core functionality of the application is centered around CRUD operations for
 - Creating a personalized profile
 
 ## Demo
-[Test the app here](https://quiz-app-frontend-production-b8c1.up.railway.app/)
+Test the app here: https://quiz-app-frontend-production-b8c1.up.railway.app/
 
 ## Related Repositories
 - **Backend Reposiory**: https://github.com/Michael50234/Quiz-App-Backend
