@@ -14,7 +14,7 @@ The core functionality of the application is centered around CRUD operations for
 
 ### Backend
 - **Technologies Used**: Python, Django, DRF (Django Rest Framework)
-- **Description**: The backend saves data to the database, serves data from the database to the frontend, and enforces authentication and authorization. Authentication is implemented using JWT tokens, verifying user identity and securing API requests, and authorization logic is enforced through DRF permission classes, allowing control to access to resources based on user roles and ownership. In addition, the backend issues Firebase Custom Tokens, allowing the frontend to authenticate with Firebase services such as Cloud Storage. Request input validation is handled using DRF serializers, ensuring ensuring incoming data is safe and usable.
+- **Description**: The backend saves data to the database, serves data from the database to the frontend, and enforces authentication and authorization. Authentication is implemented using JWT tokens, verifying user identity and securing API requests, and authorization logic is enforced through DRF permission classes, allowing control to access to resources based on ownership. In addition, the backend issues Firebase Custom Tokens, allowing the frontend to authenticate with Firebase services such as Cloud Storage. Request input validation is handled using DRF serializers, ensuring ensuring incoming data is safe and usable.
 
 ### Database
 - **Technologies Used**: MySQL
