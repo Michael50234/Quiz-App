@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to the Github repository for my project **Quiz App**! Quiz App is a web application that allows users to create, share, and play quizzes. Users can browse quizzes, create, edit, and delete their own quizzes, upload images (e.g., quiz cover images and question images), view past quiz attempts, and create a personalized profile.
+Welcome to the Github repository for my project **Quiz App**! Quiz App is a web application that allows users to create, share, and play quizzes. Users can browse quizzes, create, edit, and delete their own quizzes, upload images (e.g. quiz cover images and question images), view past quiz attempts, and create a personalized profile.
 
 ## Project Overview
 
