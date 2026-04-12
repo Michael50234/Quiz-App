@@ -6,7 +6,7 @@ Welcome to the Github repository for my project **Quiz App**! Quiz App is a web 
 
 ## Project Overview
 
-The core functionality of this app is built around CRUD operations for quizzes. The app also features a user-friendly user interface that allows users to access the key CRUD functionalities of the app, displays data stored in the database, such as records of past attempts and quizzes, and lets users play quizzes. 
+The core functionality of this app is built around CRUD operations for quizzes. The app also features a user-friendly user interface that allows users to access the key CRUD functionalities of the app, displays data stored in the database, such as records of past quiz attempts and quizzes, and lets users play quizzes. 
 
 ### Frontend
 - **Technologies Used**: TypeScript, MUI (Material UI), React, Next.js
