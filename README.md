@@ -2,27 +2,27 @@
 
 ## Introduction
 
-Welcome to the Github repository for my project **Quiz App**. Quiz App is a web application that allows users to create, share, and play quizzes. Users can browse quizzes, create and edit their own quizzes, upload images (e.g., quiz cover images and question images), view past quiz attempts, and create a personalized profile.
+Welcome to the Github repository for my project **Quiz App**! Quiz App is a web application that allows users to create, share, and play quizzes. Users can browse quizzes, create, edit, and delete their own quizzes, upload images (e.g., quiz cover images and question images), view past quiz attempts, and create a personalized profile.
 
 ## Project Overview
 
-The core functionality of this app is built around CRUD operations for quizzes and the app features a user-friendly user interface that allows users to access the key CRUD functionality of the app and displays data stored in the database, such as records of past attempts and the user's profile data. 
+The core functionality of this app is built around CRUD operations for quizzes. The app also features a user-friendly user interface that allows users to access the key CRUD functionalities of the app, displays data stored in the database, such as records of past attempts and quizzes, and lets users play quizzes. 
 
 ### Frontend
-- **Technologies Used**:
-- **Description**: 
+- **Technologies Used**: TypeScript, MUI (Material UI), React, Next.js
+- **Description**: The frontend provides an interactive interface that allows users to create and manage their own quizzes, search for other user's quizzes, and play quizzes. It also lets users customize their profile information and view their past quiz attempts. It uses a protected page component and a global user state for authentication and authorization.
 
 ### Backend
-- **Technologies Used**:
-- **Description**: 
+- **Technologies Used**: Python, Django, DRF (Django Rest Framework)
+- **Description**: The backend saves data to the database, serves data from the database to the frontend, and enforces authentication and authorization. Authentication is implemented using JWT tokens, verifying user identity and securing API requests, and authorization logic is enforced through DRF permission classes, allowing control to access to resources based on user roles and ownership. In addition, the backend issues Firebase Custom Tokens, allowing the frontend to authenticate with Firebase services such as Cloud Storage. Request input validation is handled using DRF serializers, ensuring ensuring incoming data is safe and usable.
 
 ### Database
-- **Technologies Used**:
-- **Description**: 
+- **Technologies Used**: MySQL
+- **Description**: The database allows for the persistence of quizzes, user information, and quiz attempts. It also defines relationships between different models/tables, such as quiz ownership, allowing for efficent data retrival and connecting related data. 
 
 ### Cloud Storage
-- **Technologies Used**:
-- **Description**:
+- **Technologies Used**: Firebase
+- **Description**: Firebase, specifically firebase cloud storage, is used for the persistence of user uploaded images. 
 
 ### Key Features
 - CRUD operations for quizzes
