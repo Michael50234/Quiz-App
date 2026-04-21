@@ -96,7 +96,7 @@ export default function Login() {
 
       redirectToHome();
     } catch (error) {
-      if (error instanceof Error) {
+      if (error instanceof Error && error.message.trim()) {
         showError(error.message);
       } else {
         showError("Something went wrong");
@@ -151,7 +151,7 @@ export default function Login() {
 
       showSuccess("Successfully signed up");
     } catch (error) {
-      if (error instanceof Error) {
+      if (error instanceof Error && error.message.trim()) {
         showError(error.message);
       } else {
         showError("Something went wrong");
@@ -275,6 +275,8 @@ export default function Login() {
               }}
               sx={{
                 fontSize: "1.3rem",
+                width: "150px",
+                height: "60px"
               }}
             >
               { loginLoading ? <CircularProgress /> : "Submit" }
